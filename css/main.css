@@ -1,0 +1,24 @@
+body {
+    background-image: url("../images/binary.jpg");
+    background-size: cover;
+}
+input {
+    height: 25px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+}
+.margin-left {
+    margin-left: 40%;
+}
+.margin-top {
+    margin-top: 20%;
+}
+.converter {
+    width: 23%;
+}
+.result-box {
+    margin-left: 35%;
+    margin-top: 25%;
+    color: aliceblue;
+}
