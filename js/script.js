@@ -1,14 +1,13 @@
-
 function validNumber () {
   let binary = document.getElementById('number').value;
   for(let i = 0; i < binary.length; i++) {
     const inputNumber = binary[i];
     if(inputNumber < 0 || inputNumber > 1){
-      document.getElementById('invalid').innerText = 'NUMBER IS NOT BINARY' 
+      document.getElementById('invalid').innerText = 'NUMBER IS NOT BINARY'
+      document.getElementById ('result').style = 'display: none';
       return false
     }
   } 
-  document.getElementById('invalid').style = 'display:none';
   return true
 }
 
@@ -45,6 +44,8 @@ function reverse() {
   for (let i = 0; i < binary.length; i++) {
     number += binary[i] * pow(2, i);
     document.getElementById('result').innerText = number;
+    document.getElementById('invalid').innerText = 'NUMBER IS BINARY';
+    document.getElementById ('result').style = 'display: block';
   }
   
   return number;
